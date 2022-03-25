@@ -29,6 +29,7 @@ class Encoder(nn.Module):
        for layer in self.layers:
            src = layer(src,src_mask)
        return src
+
 #EncoderLayer
 
 class EncoderLayer(nn.Module):
