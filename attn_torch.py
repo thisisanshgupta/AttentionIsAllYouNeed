@@ -17,7 +17,7 @@ class Encoder(nn.Module):
 
     def forward(self,src,src_mask):
        batch_size = src.size(0)
-       seq_len = sex.size(1)
+       seq_len = src.size(1)
        device = next(self.parameters()).device
        pos = (
            torch.arange(0, seq_len)
